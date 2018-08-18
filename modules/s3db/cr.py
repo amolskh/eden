@@ -454,6 +454,8 @@ class CRShelterModel(S3Model):
                        "status",
                        "shelter_type_id",
                        #"shelter_service_id",
+                       "person_id",
+                       "phone",
                        ]
         if dynamic:
             list_fields.append("capacity_day")
@@ -466,7 +468,6 @@ class CRShelterModel(S3Model):
             # Manual
             list_fields.append("population")
         list_fields.append("location_id$addr_street")
-        #list_fields.append("person_id")
 
         # Which levels of Hierarchy are we using?
         levels = current.gis.get_relevant_hierarchy_levels()
