@@ -1121,7 +1121,7 @@ def config(settings):
             name_nice = T("Organizations"),
             #description = 'Lists "who is doing what & where". Allows relief agencies to coordinate their activities',
             restricted = True,
-            module_type = 1
+            module_type = 2
         )),
         # All modules below here should be possible to disable safely
         ("hrm", Storage(
@@ -1214,7 +1214,7 @@ def config(settings):
             name_nice = T("Shelters"),
             #description = "Tracks the location, capacity and breakdown of victims in Shelters",
             restricted = True,
-            module_type = 10
+            module_type = 1
         )),
         ("hms", Storage(
             name_nice = T("Hospitals"),
